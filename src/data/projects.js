@@ -45,5 +45,21 @@ export const projects = [
     tech: ["Figma", "Canva", "Graphic Design", "Visual Storytelling"],
     image: "https://images.unsplash.com/photo-1542435503-91dce5320775?auto=format&fit=crop&q=80&w=1200", // Notebook/Magazine design
     link: "https://www.behance.net/gallery/223238497/Project-Astitva-For-Enactus"
+  },
+  {
+    id: 7,
+    title: "HIREFLO Product Redesign Case Study",
+    description: "Redesigned HIREFLO’s user experience by identifying workflow gaps, improving navigation, and optimizing recruiter journeys through user research, product analysis, and strategic feature recommendations.",
+    tech: ["UX Research", "Product Design", "User Experience", "Product Analysis"],
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=1200", // UI/UX Design
+    link: "https://silly-jackfruit-d3c.notion.site/HIREFLO-PRODUCT-REDESIGN-CASE-STUDY-6ae4db4ce8698309be34010a710cf544?source=copy_link"
+  },
+  {
+    id: 8,
+    title: "boAt Unplugged – Product Teardown",
+    description: "Analyzed boAt’s product ecosystem, brand strategy, user experience, and market positioning to identify growth opportunities, customer engagement improvements, and strategic product recommendations.",
+    tech: ["Product Management", "Brand Strategy", "Market Analysis", "UX Research"],
+    image: "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?auto=format&fit=crop&q=80&w=1200", // Headphones / Product
+    link: "https://silly-jackfruit-d3c.notion.site/boAt-Unplugged-A-Product-Teardown-3584db4ce86980879efef4b8516b6317"
   }
 ];
