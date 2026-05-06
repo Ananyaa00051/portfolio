@@ -6,11 +6,42 @@ import MagneticButton from '../components/common/MagneticButton';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
+  const [result, setResult] = useState("");
   
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending message...");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "1e8bcd5c-0e57-4204-8166-ef0428fd6a5b");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Message sent successfully! I'll get back to you soon.");
+        event.target.reset();
+      } else {
+        console.error("Error", data);
+        setResult(data.message || "Failed to send message.");
+      }
+    } catch (err) {
+      setResult("An error occurred. Please try again.");
+    }
+    
+    // Clear success message after 5 seconds
+    setTimeout(() => setResult(""), 5000);
   };
 
   const socials = [
@@ -112,11 +143,13 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <form className="flex flex-col space-y-8" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col space-y-8" onSubmit={onSubmit}>
               <div className="group">
                 <label className="block font-mono text-sm text-text/60 mb-2 uppercase group-focus-within:text-accent transition-colors">Name</label>
                 <input 
                   type="text" 
+                  name="name"
+                  required
                   placeholder="What's your name?" 
                   className="w-full bg-transparent border-b border-white/20 py-4 text-text font-sans text-xl focus:outline-none focus:border-accent transition-colors placeholder:text-text/20"
                 />
@@ -125,6 +158,8 @@ export default function Contact() {
                 <label className="block font-mono text-sm text-text/60 mb-2 uppercase group-focus-within:text-accent transition-colors">Email</label>
                 <input 
                   type="email" 
+                  name="email"
+                  required
                   placeholder="hello@company.com" 
                   className="w-full bg-transparent border-b border-white/20 py-4 text-text font-sans text-xl focus:outline-none focus:border-accent transition-colors placeholder:text-text/20"
                 />
@@ -132,16 +167,27 @@ export default function Contact() {
               <div className="group">
                 <label className="block font-mono text-sm text-text/60 mb-2 uppercase group-focus-within:text-accent transition-colors">Message</label>
                 <textarea 
+                  name="message"
+                  required
                   rows="4"
                   placeholder="Tell me about your project..." 
                   className="w-full bg-transparent border-b border-white/20 py-4 text-text font-sans text-xl focus:outline-none focus:border-accent transition-colors resize-none placeholder:text-text/20"
                 ></textarea>
               </div>
               
-              <div className="pt-4">
+              <div className="pt-4 flex items-center gap-6">
                 <MagneticButton className="w-full md:w-auto px-12 py-5 bg-accent text-base font-mono text-sm uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300">
                   Send Message
                 </MagneticButton>
+                {result && (
+                  <motion.p 
+                    initial={{ opacity: 0 }} 
+                    animate={{ opacity: 1 }} 
+                    className="font-mono text-sm text-accent"
+                  >
+                    {result}
+                  </motion.p>
+                )}
               </div>
             </form>
           </motion.div>
