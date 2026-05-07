@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Text Scramble component for nav links
-const ScrambleLink = ({ href, children }) => {
+const ScrambleLink = ({ href, target, rel, children }) => {
   const [text, setText] = useState(children);
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -32,6 +32,8 @@ const ScrambleLink = ({ href, children }) => {
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       onMouseOver={handleMouseOver}
       className="text-text hover:text-accent transition-colors duration-300 font-mono text-sm uppercase tracking-widest"
     >
@@ -57,7 +59,8 @@ export default function Navbar() {
     { name: "Experience", href: "#experience" },
     { name: "Academics", href: "#academics" },
     { name: "Work", href: "#work" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
+    { name: "Resume", href: "https://drive.google.com/file/d/1wRn1nKTJQfja-rauiduF0Lu9u46K1CKR/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" }
   ];
 
   return (
@@ -78,7 +81,7 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-               <ScrambleLink key={link.name} href={link.href}>{link.name}</ScrambleLink>
+               <ScrambleLink key={link.name} href={link.href} target={link.target} rel={link.rel}>{link.name}</ScrambleLink>
             ))}
           </div>
 
@@ -106,6 +109,8 @@ export default function Navbar() {
               <motion.a
                 key={link.name}
                 href={link.href}
+                target={link.target}
+                rel={link.rel}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 + 0.3 }}

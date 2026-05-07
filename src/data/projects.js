@@ -36,14 +36,14 @@ export const projects = [
     title: "Virtual Whiteboard",
     description: "Developed a touchless, real-time gesture-based drawing system using Computer Vision and OpenCV, delivering intuitive writing interactions at 30+ FPS tracking performance.",
     tech: ["Python", "Computer Vision", "OpenCV"],
-    image: "https://images.unsplash.com/photo-1616161560417-66d4da530674?auto=format&fit=crop&q=80&w=1200", // Hand gesture / digital space
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200", // Tech concept
   },
   {
     id: 6,
     title: "Project Astitva – Enactus Magazine",
     description: "Designed a cohesive impact magazine layout for social initiative storytelling. Transformed raw content into engaging visual narratives, establishing a clear visual identity and structured information hierarchy.",
     tech: ["Figma", "Canva", "Graphic Design", "Visual Storytelling"],
-    image: "https://images.unsplash.com/photo-1542435503-91dce5320775?auto=format&fit=crop&q=80&w=1200", // Notebook/Magazine design
+    image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&q=80&w=1200", // Notebook/Magazine design
     link: "https://www.behance.net/gallery/223238497/Project-Astitva-For-Enactus"
   },
   {
