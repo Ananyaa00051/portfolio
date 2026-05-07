@@ -55,6 +55,14 @@ export const projects = [
     link: "https://silly-jackfruit-d3c.notion.site/HIREFLO-PRODUCT-REDESIGN-CASE-STUDY-6ae4db4ce8698309be34010a710cf544?source=copy_link"
   },
   {
+    id: 9,
+    title: "Mosaic – Speculative Product Case Study",
+    description: "An immersive React-based case study exploring a healthier, calmer internet. Blends product thinking, interaction design, and storytelling into a conceptual platform for mindful digital living — built end-to-end from product vision to frontend implementation.",
+    tech: ["React", "Framer Motion", "Product Design", "Speculative Design", "Frontend Engineering"],
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1200", // Calm nature / mindful aesthetic
+    link: "https://mosaic-delta-vert.vercel.app/"
+  },
+  {
     id: 8,
     title: "boAt Unplugged – Product Teardown",
     description: "Analyzed boAt’s product ecosystem, brand strategy, user experience, and market positioning to identify growth opportunities, customer engagement improvements, and strategic product recommendations.",
