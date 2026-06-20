@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: 11,
+    title: "CodePilot AI – Autonomous Coding Agent",
+    description: "An autonomous AI coding agent built in pure Python that uses Gemini API's native function-calling to plan, execute, and self-debug code without human intervention. Implements a ReAct (Reason + Act) agentic loop — reading files, running scripts, capturing tracebacks, writing fixes, and re-verifying — with sandboxed execution, path-traversal protection, a static code scanner, and full JSON run reports.",
+    tech: ["Python", "Gemini API", "Function Calling", "Agentic AI", "ReAct Architecture", "subprocess", "pytest"],
+    image: "/codepilot_ai_dashboard.png",
+    link: "https://github.com/Ananyaa00051/-CLI-coding-agent"
+  },
+  {
     id: 10,
     title: "YouTube AI Summarizer",
     description: "Full-stack AI application that extracts YouTube video transcripts, processes long-form content using LangChain's chunking pipeline, and generates structured summaries with Gemini 2.5 Flash. Converts videos into executive summaries, key takeaways, action items, important quotes, and detailed notes through a scalable Map-Reduce summarization workflow.",
