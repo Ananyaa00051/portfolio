@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: 10,
+    title: "YouTube AI Summarizer",
+    description: "Full-stack AI application that extracts YouTube video transcripts, processes long-form content using LangChain's chunking pipeline, and generates structured summaries with Gemini 2.5 Flash. Converts videos into executive summaries, key takeaways, action items, important quotes, and detailed notes through a scalable Map-Reduce summarization workflow.",
+    tech: ["FastAPI", "React", "LangChain", "Gemini API", "Python", "LLM Applications", "NLP", "Prompt Engineering"],
+    image: "/youtube_summarizer_dashboard.png",
+    link: "https://github.com/Ananyaa00051/summoraAI"
+  },
+  {
     id: 1,
     title: "Smart Research Assistant",
     description: "A GenAI-based assistant capable of processing 100+ PDFs for rapid text extraction, summarization, and querying. Reduced manual review time by 75% using LLM-based workflows.",
