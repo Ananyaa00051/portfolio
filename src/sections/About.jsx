@@ -115,7 +115,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-8 py-8 border-t border-b border-white/5">
               <div>
                 <p className="text-5xl font-heading font-bold text-accent mb-2">
-                  8.97
+                  9.1
                 </p>
                 <p className="font-mono text-sm text-text/60 uppercase">CGPA (Top Performer)</p>
               </div>

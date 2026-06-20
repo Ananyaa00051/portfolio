@@ -5,7 +5,7 @@ export const academics = [
     degree: "B.Tech, Artificial Intelligence & Data Science",
     date: "2022 - Present",
     points: [
-      "CGPA: 8.97/10",
+      "CGPA: 9.1/10",
       "Top performer (Rank 4 – Semester 5)",
       "Certified in Deep Learning (Stanford, Coursera)",
       "Published research in IRJET (2025)",
