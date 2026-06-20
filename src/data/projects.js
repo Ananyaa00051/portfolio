@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: 12,
+    title: "DocsGPT – Multi-Document RAG Pipeline",
+    description: "A Multi-Document RAG pipeline enabling semantic search and Q&A across large document collections. Ingests PDFs, TXT, and DOCX files into a FAISS/Qdrant vector database, then applies multi-query expansion, BGE reranking, and LangGraph-orchestrated query routing to deliver citation-backed answers, cross-document analysis, and conversation memory.",
+    tech: ["Python", "Streamlit", "LangChain", "LangGraph", "Groq", "FAISS", "Qdrant", "HuggingFace Embeddings"],
+    image: "/docsgpt_dashboard.png",
+    link: "https://github.com/Ananyaa00051/Docsgpt-multi-document-RAG-pipeline"
+  },
+  {
     id: 11,
     title: "CodePilot AI – Autonomous Coding Agent",
     description: "An autonomous AI coding agent built in pure Python that uses Gemini API's native function-calling to plan, execute, and self-debug code without human intervention. Implements a ReAct (Reason + Act) agentic loop — reading files, running scripts, capturing tracebacks, writing fixes, and re-verifying — with sandboxed execution, path-traversal protection, a static code scanner, and full JSON run reports.",
