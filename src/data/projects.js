@@ -15,14 +15,7 @@ export const projects = [
     image: "/youtube_summarizer_dashboard.png",
     link: "https://github.com/Ananyaa00051/summoraAI"
   },
-  {
-    id: 1,
-    title: "Smart Research Assistant",
-    description: "A GenAI-based assistant capable of processing 100+ PDFs for rapid text extraction, summarization, and querying. Reduced manual review time by 75% using LLM-based workflows.",
-    tech: ["Python", "NLP", "LLMs", "Data Processing", "GenAI"],
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1200", // Abstract tech/code
-    link: "https://github.com/Ananyaa00051/Smart-Research-Assistant---Genai"
-  },
+
   {
     id: 2,
     title: "Breast Cancer Detection",
