@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
 
         {/* Hover overlay with description */}
         <div className="absolute inset-0 bg-base/90 backdrop-blur-sm flex flex-col justify-center p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p className="font-sans text-text/80 text-sm leading-relaxed line-clamp-6">
+          <p className="font-sans text-text/80 text-sm leading-relaxed line-clamp-4">
             {project.description}
           </p>
           <span className="mt-4 font-mono text-xs text-accent uppercase tracking-widest">
