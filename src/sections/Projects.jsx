@@ -43,11 +43,6 @@ const ProjectCard = ({ project }) => {
               {tech}
             </span>
           ))}
-          {project.tech.length > 3 && (
-            <span className="font-mono text-[10px] text-text/30 px-1 py-0.5">
-              +{project.tech.length - 3}
-            </span>
-          )}
         </div>
       </div>
     </a>
