@@ -86,5 +86,13 @@ export const projects = [
     tech: ["Product Management", "Brand Strategy", "Market Analysis", "UX Research"],
     image: "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?auto=format&fit=crop&q=80&w=1200", // Headphones / Product
     link: "https://silly-jackfruit-d3c.notion.site/boAt-Unplugged-A-Product-Teardown-3584db4ce86980879efef4b8516b6317"
+  },
+  {
+    id: 10,
+    title: "MAPLE — AI-Powered FIFA Analytics & Scouting Assistant",
+    description: "An AI-assisted football analytics platform enabling natural language querying of FIFA player data. Ask questions like 'Show me top young midfielders under 23' or 'Generate a scouting report for Mbappé' and receive structured analytics, interactive visualizations, and AI-generated insights. Built with a hybrid LLM + local Pandas architecture to minimize hallucinations, featuring KNN-based player similarity, radar chart comparisons, and Groq-hosted LLaMA 3.3 for intent classification.",
+    tech: ["Python", "Streamlit", "Pandas", "Plotly", "scikit-learn", "LLMs", "Groq", "GenAI"],
+    image: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&q=80&w=1200", // Football / stadium
+    link: "https://github.com/Ananyaa00051/Maple---FIFA-analysis-assistant"
   }
 ];
