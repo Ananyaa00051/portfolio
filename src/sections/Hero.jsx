@@ -96,7 +96,7 @@ export default function Hero() {
           <MarqueeRow 
             items={[
               "Available for work",
-              "Portfolio 2025",
+              "AI & Product Builder",
               "Based in Delhi, India",
               "Open to opportunities"
             ]} 
